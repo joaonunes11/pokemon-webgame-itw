@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- ITW Grupo 48: Número: 55982, Tânia Miranda, PL26
+			   	   Número: 53745, João Nunes, PL26 
+			       Número: 40292, Francisco Silva, PL26 -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="detalhes.js"></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><img src="imagens/logo.png" alt="logo"></label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="historia.html">História</a></li>
+        <li><a href="tutorial.html">Tutorial</a></li>
+        <li><a class="active" href="jogo.html">Jogo</a></li>
+        <li><a href="ajuda.html">Ajuda</a></li>
+        <li><a href="developers.html">Developers</a></li>      
+      </ul>
+    </nav>
+    <section>
+      <div class="btns_jogo">
+        <button onclick="document.getElementById('login_container').style.display='block'" style="width:auto;">Login</button>
+        <button onclick="document.getElementById('registo_container').style.display='block'" style="width:auto;">Registo</button>
+        <button onclick="window.location.href = 'personagem.html'" style="width:auto;">Iniciar Jogo</button>
+      </div>
+
+      <div id="login_container" class="login_container">
+        <form class="login_content" action="">
+          <div class="closebtn">
+            <span onclick="document.getElementById('login_container').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="imagens/pokebola.png" alt="Avatar" class="avatar">
+          </div>
+          <div class="container">
+            <h1>Login</h1><br>
+            <label for="userName">Email</label>
+				    <input type="email" id="userName" placeholder="Username" required>
+            <label for="userPw">Password</label>
+				    <input type="password" id= "userPw" placeholder="Password" required>
+            <button type="submit" onclick="check()" href="ajuda.html" >Login</button>
+            <div id="remember">
+              <input type="checkbox" value="lsRememberMe" id="rememberMe"
+                style="display: inline-block;">
+              <label>Remember me</label>
+            </div>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('login_container').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+
+      <div id="registo_container" class="registo_container">
+        <form class="registo_content" action="">
+          <div class="closebtn">
+            <span onclick="document.getElementById('registo_container').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="imagens/pokebola.png" alt="Avatar" class="avatar">
+          </div>
+          <div class="container">
+            <h1>Registo</h1><br>
+            <label for="name">Email</label>
+			      <input type="email" id="name" placeholder="Username" required>
+            <label for="pw">Password</label>
+			      <input type="password" id= "pw" placeholder="Password" required>
+            <button type="submit" onclick="store()">Registar</button>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('registo_container').style.display='none'" class="cancelbtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+    </section>
+  </body>
+</html>

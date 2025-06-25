@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!-- ITW Grupo 48: Número: 55982, Tânia Miranda, PL26
+			   Número: 53745, João Nunes, PL26 
+			   Número: 40292, Francisco Silva, PL26 -->
+
+<html lang="en" dir="ltr">
+	<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personagem</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="detalhes.js"></script>
+  </head>
+	</head>
+	
+	<body>
+		<nav>
+		  <input type="checkbox" id="check">
+		  <label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		  </label>
+		  <label class="logo"><img src="imagens/logo.png" alt="logo"></label>
+		  <ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="historia.html">História</a></li>
+			<li><a href="tutorial.html">Tutorial</a></li>
+			<li><a class="active" href="jogo.html">Jogo</a></li>
+			<li><a href="ajuda.html">Ajuda</a></li>
+			<li><a href="developers.html">Developers</a></li>      
+		  </ul>
+		</nav>
+		
+		<div class="personagens">
+			<h3 class="h3avatar">Escolhe a personagem com que queres jogar!</h3>
+		  
+			<a href="pokemon.html"><img src="imagens/avatar1.png" alt="Pokemon Amarelo" id="pikachu" onclick="savePokemon('pikachu');"></a>
+			<a href="pokemon.html"><img src="imagens/avatar2.png" alt="Pokemon Verde" id="bulbasaur" onclick="savePokemon('bulbasaur');"></a>
+			<a href="pokemon.html"><img src="imagens/avatar3.jpg" alt="Pokemon Dragão" id="gyarados" onclick="savePokemon('gyarados');"></a>
+		</div>
+	</body>
+</html>
